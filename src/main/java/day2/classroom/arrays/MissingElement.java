@@ -1,5 +1,7 @@
 package day2.classroom.arrays;
 
+import java.util.Arrays;
+
 public class MissingElement {
 
 	
@@ -17,8 +19,10 @@ public class MissingElement {
 		 4) If the following one is not +1 -> Print as missing
 		 */
 		
+		Arrays.sort(data);
 		
-		
+		if (i=0; i<data.length; i++)
+			
 		
 		
 		

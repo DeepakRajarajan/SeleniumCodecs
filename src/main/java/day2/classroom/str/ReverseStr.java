@@ -3,7 +3,7 @@ package day2.classroom.str;
 public class ReverseStr {
 
 	public static void main(String[] args) {
-		
+
 		// Here is the input
 		String test = "feeling good";
 
@@ -13,25 +13,29 @@ public class ReverseStr {
 			b) Traverse through each character (using loop in reverse direction)
 			c) Print the character (without newline -> like below
 			   System.out.print(ch);
-		*/
+		 */
 
-		
-		
-		
+		char[] reverse = test.toCharArray(); 
+		for(int i=reverse.length-1; i>=0; i--)
+		{
+			System.out.print(reverse[i]);
+
+		}
+		System.out.println();
 		/* Pseudo Code: 2
 		a) Find the length of the string
 		b) Traverse through each index from length-1 -> 0 (using loop in reverse direction)
 		c) Find the character of the String using its index
-		*/
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		 */
+
+		int length = test.length();
+		System.out.println("The length of input words is " +length);
+
+
+
+
+
+
 	}
 
 }
