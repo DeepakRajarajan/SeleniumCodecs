@@ -7,12 +7,12 @@ public class CreateLead {
 	public static void main(String[] args) {
 
 		// Set the property for ChromeDriver
-
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 
 		// Initiate the ChromeBroswer
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/control/main");
+		
 		// Maximize the browser
 		driver.manage().window().maximize();
 
