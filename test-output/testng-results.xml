@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="58313" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+    <groups>
+    </groups>
+    <test name="TestNGrun" duration-ms="58313" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+      <class name="day9.classroom.DeleteLead">
+        <test-method status="PASS" signature="deletelead()[pri:0, instance:day9.classroom.DeleteLead@7494e528]" name="deletelead" duration-ms="58075" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletelead -->
+      </class> <!-- day9.classroom.DeleteLead -->
+      <class name="day9.classroom.EditLead">
+        <test-method status="PASS" signature="editlead()[pri:0, instance:day9.classroom.EditLead@30b8a058]" name="editlead" duration-ms="58231" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editlead -->
+      </class> <!-- day9.classroom.EditLead -->
+      <class name="day9.classroom.CreateLead">
+        <test-method status="PASS" signature="createlead()[pri:0, instance:day9.classroom.CreateLead@4bbfb90a]" name="createlead" duration-ms="57290" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlead -->
+      </class> <!-- day9.classroom.CreateLead -->
+    </test> <!-- TestNGrun -->
+  </suite> <!-- Suite -->
+</testng-results>

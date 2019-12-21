@@ -23,6 +23,7 @@ public class FindTrain {
 		trainend.clear();
 		trainend.sendKeys("SBC",Keys.TAB);
 		Thread.sleep(3000);
+		driver.findElementById("chkSelectDateOnly").click();
 		WebElement traintable = driver.findElementByXPath("//table[@class='DataTable TrainList TrainListHeader']");
 		List<WebElement> rows = traintable.findElements(By.tagName("tr"));
 		System.out.println(rows.size());
