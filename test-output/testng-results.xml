@@ -1,29 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="58313" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+  <suite name="Default suite" duration-ms="537" started-at="2019-12-28T11:34:13 IST" finished-at="2019-12-28T11:34:14 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTest@d44fc21]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="TestNGrun" duration-ms="58313" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
-      <class name="day9.classroom.DeleteLead">
-        <test-method status="PASS" signature="deletelead()[pri:0, instance:day9.classroom.DeleteLead@7494e528]" name="deletelead" duration-ms="58075" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+    <test name="Default test" duration-ms="537" started-at="2019-12-28T11:34:13 IST" finished-at="2019-12-28T11:34:14 IST">
+      <class name="runner.RunTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunTest@d44fc21]" name="setUpClass" is-config="true" duration-ms="210" started-at="2019-12-28T11:34:13 IST" finished-at="2019-12-28T11:34:14 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletelead -->
-      </class> <!-- day9.classroom.DeleteLead -->
-      <class name="day9.classroom.EditLead">
-        <test-method status="PASS" signature="editlead()[pri:0, instance:day9.classroom.EditLead@30b8a058]" name="editlead" duration-ms="58231" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:13 IST">
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTest@d44fc21]" name="runScenario" duration-ms="211" started-at="2019-12-28T11:34:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-12-28T11:34:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Create a Lead by completing all mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Leaftaps application and create Lead"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[There are undefined steps]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: There are undefined steps
+at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:61)
+at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editlead -->
-      </class> <!-- day9.classroom.EditLead -->
-      <class name="day9.classroom.CreateLead">
-        <test-method status="PASS" signature="createlead()[pri:0, instance:day9.classroom.CreateLead@4bbfb90a]" name="createlead" duration-ms="57290" started-at="2019-12-21T11:08:15 IST" finished-at="2019-12-21T11:09:12 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunTest@d44fc21]" name="tearDownClass" is-config="true" duration-ms="13" started-at="2019-12-28T11:34:14 IST" finished-at="2019-12-28T11:34:14 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createlead -->
-      </class> <!-- day9.classroom.CreateLead -->
-    </test> <!-- TestNGrun -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

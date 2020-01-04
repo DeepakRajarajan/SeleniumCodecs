@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2" verbose="5" parallel="classes">
+<parameter name = "username" value = "DemoSalesManager" />
+<parameter name = "password" value = "crmsfa" />
+<parameter name = "url" value = "http://leaftaps.com/opentaps/control/main">
+</parameter>
+<test thread-count="5" name="Test2">
+		<classes>
+			<class name="annotationPractice.CreateLead" />
+		</classes>
+	</test> <!-- Test2 -->
+
+	<test thread-count="5" name="Test3">
+			<classes>
+			<class name="annotationPractice.EditLead" />
+		</classes>
+	</test> <!-- Test3 -->
+</suite> <!-- Suite2 -->
